@@ -1,0 +1,254 @@
+body {
+  margin: 0px;
+}
+.navbar {
+  height: 68px;
+  width: 100vw;
+  background-color: #eff1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1300px;
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  /* height: 48px; */
+}
+
+.flex {
+  display: flex;
+}
+.input-icon {
+  display: flex;
+  background-color: white;
+  border: 2px solid #002f34;
+  border-radius: 3px;
+  height: 44px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: #002f34;
+  font-size: 16px;
+}
+input:focus + .arrow {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.input-icon:has(input:focus) {
+  border: 2px solid #23e5db;
+}
+.search {
+  /* sadsada */
+  height: 44px;
+  background-color: #002f34;
+  color: white;
+}
+.input-search {
+  width: 634px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #002f34;
+  height: 48px;
+}
+.jual {
+  display: flex;
+  height: 48px;
+  width: 109px;
+}
+.basepro {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 2150px;
+}
+.content {
+  width: 1280px;
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+}
+.content2 {
+  width: 1232px;
+  height: auto;
+  align-items: center;
+}
+.rekom {
+  width: 1232px;
+  height: 30px;
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  justify-content: left;
+  align-content: left;
+  width: 100vw;
+  /* border: 1px solid black; */
+  /* display: grid;
+  grid-template-columns: 288px 288px 288px 288px;
+  grid-auto-rows: 150px;
+  margin: 0 auto;
+  grid-column-gap: 26px;
+  grid-row-gap: 200px;
+  width: 1232px; */
+  /* height: 1000px; */
+}
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: left;
+  border: 1px solid rgb(211, 209, 209);
+  height: 315px;
+  width: 21%;
+  padding: 15px;
+  border-radius: 10px;
+  padding-bottom: 0;
+  align-content: center;
+}
+.card2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* grid-template-rows: 288px 288px 288px 288px; */
+}
+.harga {
+  font-weight: bolder;
+  font-size: x-large;
+}
+.rangka {
+  border: 1px solid grey;
+  width: 288px;
+  height: 100%;
+}
+#imgprod {
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+}
+
+@media (max-width: 1300px) {
+  .card {
+    justify-content: center;
+  }
+  .card1 {
+    width: 42%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 768) {
+  .card {
+    justify-content: center;
+  }
+  .card1 {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+/* ====css todolist===== */
+.alas {
+  border-radius: 20px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #002f34;
+  /* background-image: url(./assets/bg2.jpg); */
+  width: 700px;
+  height: 1000px;
+  align-content: center;
+  align-items: center;
+}
+.input {
+  display: flex;
+  width: 650px;
+  height: 70px;
+}
+#list {
+  width: 400px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(176, 248, 7, 0.534);
+  color: black;
+  font-size: large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.judul {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#dating {
+  width: 200px;
+  border: 1px solid black;
+  background-color: rgba(176, 248, 7, 0.534);
+  color: black;
+  font-size: large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#save {
+  width: 100px;
+  background-color: rgba(176, 248, 7, 0.534);
+  font-size: xx-large;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.output {
+  display: flex;
+  border: 1px solid black;
+  border-width: 10px;
+  border-style: double;
+  border-radius: 20px;
+  width: 650px;
+  height: 900px;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 3, 0);
+  text-align: left;
+}
+#clear {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: orangered;
+  color: black;
+  font-weight: bold;
+}
+/* ====css todolist===== */
